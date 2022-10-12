@@ -1,0 +1,25 @@
+First task:
+
+	to do the task you need to open vidit by executing the following command "env EDITOR=vim vidir".
+	next step is to press "G" then "~" and then ")".
+	"G" is changing the register of one char.
+	"~" will spread command "G" to whole line.
+	and then ")" will spread it all lines.
+	
+Second task:
+
+	Open some file and press @q and some char (make sure you on the start of the line)
+	The char will be your macros name.
+	Now you're writing the macros.
+	First you need to go to in insert mode and press "quote" button
+	Then go back to normal mode and go to the end of the line by pressing "$"
+	Again go to insert mode and press "quote" button
+	Then back to normal mode you need to move to the next line.
+	Once you did that you need to go to the start of that line by pressing "^" 
+	Final step is to press "q". It will end the recording.
+	To use your macros you need to prese "@" + your macros name.
+	Also you can press any number before macros, it will repeat macros the number times.
+	
+Trird task:
+
+	Open file in vim and in command line press ".!date" or "read !date" or "r !date".

@@ -1,0 +1,15 @@
+first task:
+
+	1) find -maxdepth 1
+
+	2) sort @something -r
+
+	3) ls -l -a
+	
+second task:
+
+	cat sys/class/power_supply/BAT0/current_now
+	
+third task:
+
+	just install linux on your computer
