@@ -1,6 +1,6 @@
 First task:
 
-	to do the task you need to open vidit by executing the following command "env EDITOR=vim vidir".
+	to do the task you need to open vidir by executing the following command "env EDITOR=vim vidir".
 	next step is to press "G" then "~" and then ")".
 	"G" is changing the register of one char.
 	"~" will spread command "G" to whole line.

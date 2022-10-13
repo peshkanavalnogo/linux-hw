@@ -1,0 +1,14 @@
+First task: 
+	
+	1) find . -type f -exec chmod 644 -R {} +
+	2) find . -type d -exec chmod 755 -R {} +
+
+Second task:
+
+	ln -sf dir my_dir
+	
+Trird task:
+
+	column -t -n -s ":" /proc/mounts
+	
+	
