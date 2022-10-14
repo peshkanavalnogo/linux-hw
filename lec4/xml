@@ -1,0 +1,7 @@
+# Type q*name*dd↓↓dd↥dwdwdw$dwdwdwdwdwdwdw↓ ^dwdwdwi/esc$dwdwdwdwdwdwdwdw^ideldeldel=esc^ideldel
+
+
+<property>
+  <name>dfs.namenode.name.dir</name>
+  <value>/var/hdfs/name</value>
+</property>
