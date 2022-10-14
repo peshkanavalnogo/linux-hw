@@ -2,13 +2,15 @@ First task:
 	
 	1) find . -type f -exec chmod 644 -R {} +
 	2) find . -type d -exec chmod 755 -R {} +
+	(flag -type f/d means you find me only files/directories, -exec means do the following command,
+	flad -R means do it recursively to all files in this dir and all subdirs, "{} +" it part of -exec flag)
 
 Second task:
 
-	ln -sf dir my_dir
+	ln -sf dir my_dir ( flag -s means soft, flag -f is what makes it update everytime you call this command)
 	
 Trird task:
 
-	column -t -n -s ":" /proc/mounts
+	column -t -n -s ":" /proc/mounts ( nessesary flag there is -t, it creates a spreadsheet)
 	
 	
