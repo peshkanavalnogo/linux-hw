@@ -1,0 +1,14 @@
+2) g++ mybenchmark.cc -std=c++11 -isystem benchmark/include \
+  -Lbenchmark/build/src -lbenchmark -lpthread -o mybenchmark
+  
+  g++ bench.cpp -isystem benchmark/include   -Lbenchmark/build/src -lbenchmark
+
+g++ bench.cpp -Lbenchmark/build/src -lbenchmark
+
+task 2 : 1) g++ bench.cpp -lbenchmark -O0
+	 2) g++ bench.cpp -lbenchmark -O3
+task 3:  g++ bench.cpp -lbenchmark -O3 -flto
+
+task 4: 1) g++ bench.cpp -lbenchmark -O3 -flto -fprofile-generate
+	2) g++ bench.cpp -lbenchmark -O3 -flto -fprofile-use
+
