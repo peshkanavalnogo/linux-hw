@@ -1,0 +1,31 @@
+first task:
+	go to your dir, then enter git init
+	after that add file with text "Hello world!"
+	last step is to enter git add . and git commit -m "*something*"
+second task:
+	with rep you created in first task, create a branch
+	to do that either enter git checkout -b *name* or git branch *name*	    and git checkout *name*
+	than create random file in your branch and enter git add . , git commit -m "*something*" , git checkout master and git merge *branchname*
+
+third task:
+	create a new rep in other dir with flag --bare.
+	so enter git init --bare ( --bare here means "local server")
+	than go to first rep and push your commits in new rep
+	enter git push *path_to_rep*
+	than creater another dir and clone second rep to that dir
+	to do that enter git clone *path_to_rep* .
+
+fourth task:	
+	go to your first rep and create a new branch.
+	enter git checkout -b *branch_name*
+	than you need to change one file.
+	after you do that enter git add . and git commit -m "*something*"
+	than you need to send this to local server
+	to do than enter git push *path_to_rep*
+	than in 3 cloned rep do the same steps. ( the new bracnh must have diff name ) 
+	after that go to first rep(make sure you are on master) and enter git pull *path_to_rep* *branch_name*
+	pull another branch enter git pull *path_to_rep* *other_branch*
+	so next enter git merge *name_branch* and git merge *other_branch*
+	after you do that git will say that you need to solve conflict
+	to do than open file that you changed and edit this file manualy. 
+	
