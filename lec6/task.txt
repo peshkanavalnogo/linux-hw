@@ -5,8 +5,8 @@ task 2 : 1) g++ -O0 byte_order.hh byte_swap.hh sha1_benchmark.cc sha1.cc sha1.hh
 
 
 task 3:  1) g++ -E -O3 -flto byte_order.hh byte_swap.hh sha1_benchmark.cc sha1.cc sha1.hh types.hh
-	2) g++ -c sha1_benchmark.cc sha1.cc
-	3) g++ -flto sha1_benchmark.o sha1.o
+	2) g++ -c -O3 -flto sha1_benchmark.cc sha1.cc
+	3) g++ -flto -O3 sha1_benchmark.o sha1.o
 	then time ./a.out
 
 task 4: 1) g++ -O3 -flto -fprofile-generate byte_order.hh byte_swap.hh sha1_benchmark.cc sha1.cc sha1.hh types.hh
