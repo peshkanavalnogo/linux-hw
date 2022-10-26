@@ -1,14 +1,15 @@
-2) g++ mybenchmark.cc -std=c++11 -isystem benchmark/include \
-  -Lbenchmark/build/src -lbenchmark -lpthread -o mybenchmark
-  
-  g++ bench.cpp -isystem benchmark/include   -Lbenchmark/build/src -lbenchmark
+task 2 : 1) g++ -O0 byte_order.hh byte_swap.hh sha1_benchmark.cc sha1.cc sha1.hh types.hh
+	then time ./a.out
+	 2) g++ -O3 byte_order.hh byte_swap.hh sha1_benchmark.cc sha1.cc sha1.hh types.hh
+	 then time ./a.out
 
-g++ bench.cpp -Lbenchmark/build/src -lbenchmark
 
-task 2 : 1) g++ bench.cpp -lbenchmark -O0
-	 2) g++ bench.cpp -lbenchmark -O3
-task 3:  g++ bench.cpp -lbenchmark -O3 -flto
+task 3:  1) g++ -E -O3 -flto byte_order.hh byte_swap.hh sha1_benchmark.cc sha1.cc sha1.hh types.hh
+	2) g++ -c sha1_benchmark.cc sha1.cc
+	3) g++ -flto sha1_benchmark.o sha1.o
+	then time ./a.out
 
-task 4: 1) g++ bench.cpp -lbenchmark -O3 -flto -fprofile-generate
-	2) g++ bench.cpp -lbenchmark -O3 -flto -fprofile-use
-
+task 4: 1) g++ -O3 -flto -fprofile-generate byte_order.hh byte_swap.hh sha1_benchmark.cc sha1.cc sha1.hh types.hh
+	then time ./a.out
+	2) g++ -O3 -flto -fprofile-use byte_order.hh byte_swap.hh sha1_benchmark.cc sha1.cc sha1.hh types.hh
+	then time ./a.out
