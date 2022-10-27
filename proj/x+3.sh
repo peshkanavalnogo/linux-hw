@@ -1,25 +1,25 @@
 #!/bin/bash
 
 func(){
-    max=0
+    max=$1
     number=$1
     arr=()
     while (( number != 1 ))
-    do
+    do	
+    	arr+=($number)
 	cond=$((number%2))
 	if [[ $cond == 0 ]]; then
 	    number=$((number/2))
 	else
 	    number=$((number*3 + 1))
 	fi
-        arr+=($number)
-	if [[ $number > $max ]]; then
+	if [[ $number -gt $max ]]; then
 	    max=$number
 	fi
     done
-    
+    arr+=($number)
     echo "Array of numbers: "
-    echo ${arr[@]}
+    echo "${arr[@]}"
     echo "Max element in array: $max "
 }
 
