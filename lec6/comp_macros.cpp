@@ -1,4 +1,5 @@
 #define USE_GPU
+#define USE_FLOAT
 
 #if defined(USE_GPU) && defined(USE_FLOAT)
 int main(){

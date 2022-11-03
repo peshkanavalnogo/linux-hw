@@ -25,7 +25,6 @@ fourth task:
 	than in 3 cloned rep do the same steps. ( the new bracnh must have diff name ) 
 	after that go to first rep(make sure you are on master) and enter git pull *path_to_rep* *branch_name*
 	pull another branch enter git pull *path_to_rep* *other_branch*
-	so next enter git merge *name_branch* and git merge *other_branch*
 	after you do that git will say that you need to solve conflict
 	to do than open file that you changed and edit this file manualy. 
 	
