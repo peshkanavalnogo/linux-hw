@@ -22,9 +22,11 @@ fourth task:
 	after you do that enter git add . and git commit -m "*something*"
 	than you need to send this to local server
 	to do than enter git push *path_to_rep*
-	than in 3 cloned rep do the same steps. ( the new bracnh must have diff name ) 
-	after that go to first rep(make sure you are on master) and enter git pull *path_to_rep* *branch_name*
-	pull another branch enter git pull *path_to_rep* *other_branch*
+	than in 3 cloned rep do the same steps. ( the new branch must have diff name ) 
+	after that go to first rep(make sure you are on master) and enter git fetch *path_to_rep* *branch_name*
+	after that enter git checkout --track *path_to_rep*/*branch_name*
+	then merge them into master
+	to do that enter git merge *branch_name* and git merge *another_branch*
 	after you do that git will say that you need to solve conflict
 	to do than open file that you changed and edit this file manualy. 
 	
