@@ -1,2 +1,5 @@
 second task: 
 	env CXXFLAGS="$(pkg-config --cflags zlib)" LDFLAGS="$(pkg-config --libs zlib)" make
+
+4:
+	git clone that shit and go to meson.build, enter flags, build it, ninja it and see that it doesn't work cause idk.(but flags works so task is complite kinda)
