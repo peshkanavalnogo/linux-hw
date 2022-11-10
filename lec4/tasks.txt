@@ -1,9 +1,9 @@
 First task:
 
 	to do the task you need to open vidir by executing the following command "env EDITOR=vim vidir".
-	next step is to press "G" then "~" and then ")".
-	"G" is changing the register of one char.
-	"~" will spread command "G" to whole line.
+	next step is to press "g" or "G"(one will work for sure) then "~" and then ")".
+	"g" is changing the register of one char.
+	"~" will spread command "g" to whole line.
 	and then ")" will spread it all lines.
 	
 Second task:
