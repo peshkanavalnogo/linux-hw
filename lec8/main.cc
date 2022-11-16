@@ -5,5 +5,6 @@
 int main() {
     std::cout << "Hello" << "\n";
     Hello();
+    Hello();
     return 0;
 }
