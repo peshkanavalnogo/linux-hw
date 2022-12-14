@@ -114,7 +114,7 @@ public:
     }
     
     ~ByteBuffer() {
-      // std::cout << check(munmap(ptr, size));
+      msync(ptr, size, MS_SYNC);
       munmap(ptr, size);
     }
 
